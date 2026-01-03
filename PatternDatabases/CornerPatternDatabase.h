@@ -5,7 +5,7 @@
 #ifndef RUBIKS_CUBE_SOLVER_CORNERPATTERNDATABASE_H
 #define RUBIKS_CUBE_SOLVER_CORNERPATTERNDATABASE_H
 
-#include "../Model/RubiksCube.h"
+#include "Model/RubiksCube.h"
 #include "PatternDatabase.h"
 #include "PermutationIndexer.h"
 using namespace std;

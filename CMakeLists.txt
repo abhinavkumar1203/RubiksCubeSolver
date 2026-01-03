@@ -14,32 +14,29 @@ add_executable(RubiksCubeSolver
         Solver/DFSSolver.h
         Solver/IDAstarSolver.h
         Solver/IDDFSSolver.h
-        PatternDatabase/CornerDBMaker.cpp
-        PatternDatabase/CornerDBMaker.h
-        PatternDatabase/CornerPatternDatabase.cpp
-        PatternDatabase/CornerPatternDatabase.h
-        PatternDatabase/NibbleArray.cpp
-        PatternDatabase/NibbleArray.h
-        PatternDatabase/PatternDatabase.cpp
-        PatternDatabase/PatternDatabase.h
-        PatternDatabase/PermutationIndexer.h
-        PatternDatabase/math.cpp
-        PatternDatabase/math.h
-        "Pattern Databases/CornerDBMaker.cpp"
-        "Pattern Databases/CornerDBMaker.h"
-        "Pattern Databases/CornerDBMaker.h"
-        "Pattern Databases/CornerPatternDatabase.cpp"
-        "Pattern Databases/CornerPatternDatabase.h"
-        "Pattern Databases/NibbleArray.cpp"
-        "Pattern Databases/NibbleArray.h"
-        "Pattern Databases/PatternDatabase.cpp"
-        "Pattern Databases/PatternDatabase.h"
-        "Pattern Databases/PermutationIndexer.h"
-        "Pattern Databases/math.cpp"
-        "Pattern Databases/math.h"
+        "PatternDatabases/CornerDBMaker.cpp"
+        "PatternDatabases/CornerDBMaker.h"
+        "PatternDatabases/CornerDBMaker.h"
+        "PatternDatabases/CornerPatternDatabase.cpp"
+        "PatternDatabases/CornerPatternDatabase.h"
+        "PatternDatabases/NibbleArray.cpp"
+        "PatternDatabases/NibbleArray.h"
+        "PatternDatabases/PatternDatabase.cpp"
+        "PatternDatabases/PatternDatabase.h"
+        "PatternDatabases/PermutationIndexer.h"
+        "PatternDatabases/math.cpp"
+        "PatternDatabases/math.h"
         Solver/BFSSolver.h
         Solver/DFSSolver.h
         Solver/IDAstarSolver.h
         Solver/IDDFSSolver.h
         main.cpp
+)
+
+target_include_directories(RubiksCubeSolver PRIVATE
+        ${PROJECT_SOURCE_DIR}
+)
+
+target_compile_options(RubiksCubeSolver PRIVATE
+        -Wall -Wextra -Wpedantic
 )

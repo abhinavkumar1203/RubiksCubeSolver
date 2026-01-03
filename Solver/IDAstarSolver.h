@@ -5,17 +5,17 @@
 #define RUBIKS_CUBE_SOLVER_IDASTARSOLVER_H
 
 // #include<bits/stdc++.h>
-#include <vector>
-#include <unordered_map>
-#include <queue>
-#include <utility>
-#include <string>
 #include <algorithm>
 #include <cassert>
 #include <climits>
+#include <queue>
+#include <string>
+#include <unordered_map>
+#include <utility>
+#include <vector>
 #include "../Model/RubiksCube.h"
 #include "../Model/PatternDatabase/PatternDatabase.h"
-#include "../PatternDatabases/CornerPatternDatabase.h"
+#include "PatternDatabases/CornerPatternDatabase.h"
 
 using namespace std;
 
